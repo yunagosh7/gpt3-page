@@ -1,0 +1,42 @@
+.cta {
+    display: flex;
+    background: var(--gradient-text);
+    margin: 3rem;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+.cta small {
+    font-size: .75rem;
+}
+.cta p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta-btn {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+@media screen  and (max-width:1200px) {
+    .cta {
+        flex-direction: column;
+    }
+    
+    .cta-text {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .cta {
+        margin: 2rem ;
+    }
+}

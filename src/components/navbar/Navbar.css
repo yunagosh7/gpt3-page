@@ -1,0 +1,135 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 6rem;
+  position: fixed;
+  background-color: rgb(11, 22, 52);
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+}
+
+.nav-links-logo {
+  margin: 2rem;
+}
+
+.nav-links-logo img {
+  width: 62px;
+  height: 16px;
+}
+
+.nav-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links-container p,
+.nav-sign p,
+.nav-menu p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.nav-sign button,
+.nav-menu button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.nav-menu svg {
+  cursor: pointer;
+}
+
+.nav-menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu-container p {
+    margin: 1rem 0;
+}
+
+.nav-menu-container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links-container {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding:2rem 4rem ;
+    }    
+}
+
+@media screen and (max-width: 550px) {
+    .nav {
+        padding: 0;
+        padding-right: 2rem;
+      }    
+
+    .nav-sign {
+        display: none;
+    }
+
+    .nav-menu-container {
+        top: 20px;
+    }
+
+    .nav-menu-container-links-sign {
+        display: block;
+    }
+
+}   

@@ -1,0 +1,55 @@
+.footer {
+  background-color: var(--color-footer);
+  color: #fff;
+}
+
+.footer-heading {
+  text-align: center;
+}
+.footer-heading > h4 {
+  font-size: 4rem;
+  margin: 3rem auto;
+}
+
+.footer-heading > a {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1.25rem;
+}
+
+.footer-content {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: space-between;
+}
+
+.footer-content-image,
+.footer-content-links,
+.footer-content-company,
+.footer-content-getInTouch {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+.footer-content-image {
+    margin-right: 2rem;
+}
+
+
+.footer-container-links {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width:750px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .footer-container-links {
+        flex-direction: column;
+    }
+}

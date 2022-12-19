@@ -1,0 +1,44 @@
+.features a {
+    color: var(--color-subtext);
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.features-heading  {
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.features-heading h2 {
+    font-size: 2rem;
+    line-height: 38px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .features {
+        flex-direction: column ;
+    }
+
+    .features-heading {
+        margin-bottom: 2rem;
+    }
+
+    .features-heading a {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   .features-heading h1 {
+    font-size: 28px;
+    line-height: 38px;
+   }
+}

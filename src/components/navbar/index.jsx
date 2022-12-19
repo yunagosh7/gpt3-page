@@ -18,7 +18,7 @@ const Menu = () => (
       <a href="#features">Case Studies</a>
     </p>
     <p>
-      <a href="#blog">Library</a>
+      <a href="#footer">Library</a>
     </p>
   </>
 );

@@ -4,7 +4,7 @@ import logo from "../../assets/logo.svg";
 
 export const Footer = () => {
   return (
-    <footer className="footer section-padding">
+    <footer className="footer section-padding" id="footer">
       <div className="footer-heading">
         <h4 className="gradient-text">
           Do you want to step in to the future before others
